@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Gloock&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+/* .banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
+
+.banner img{
+  width: 100vw;
+  height: 100%;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  background-color: #002147;
+  color: white;
+}
+
+.navigation ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 20px;
+  margin: 10px 5px;
+}
+
+.menu li{
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu li:hover{
+  background-color: #fb8500;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./assets/Frontview 2023.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.transbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
+  text-align: center;
+  width: 80%;
+  height: 70vh;
+  border-radius: 20px;
+}
+
+.clgname{
+  font-size: 60px;
+  margin: 10px;
+  font-family: 'Gloock', serif;
+  letter-spacing: 2px;
+}
+ 
+.deptname{
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.event{
+  font-size: 80px;
+  margin: 10px;
+  font-family: 'Bayon', sans-serif;
+  letter-spacing: 2px;
+}
+
+.enroll{
+  color: black;
+  text-decoration: none;
+  background-color: #fb8500;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: max-content;
+  padding: 16px;
+  border-radius: 30px;
+}
+
+.enroll:hover{
+  background-color: #002147;
+  color: white;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+.clgdetails{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto 20px;
+}
+
+.greetings{
+  font: normal 700 30px 'Nunito-sans', sans-serif;
+  margin: 16px 0;
+}
+
+.clgdetails p{
+  font: normal 500 19px  sans-serif;
+  text-align: justify;
+  margin: 5px auto;
+}
+
+.campustour iframe{
+  border-radius: 10px;
+}
+
+.clgsite{
+  font-size: 20px;
+  padding: 10px;
+  background-color: #002147;
+  width: max-content;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.deptdetails{
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 30px;
+  font: normal 500 19px sans-serif;
+}
+
+.deptgreetings{
+  font: normal 700 30px 'Nunito-sans', sans-serif;
+  margin: 25px 0;
+}
+
+.deptdetails p{
+  font: normal 500 19px  sans-serif;
+  text-align: justify;
+  margin: 5px auto;
+}
+
+.deptdetails div{
+  margin-left: 20px;
+}
+
+.deptdetails div p{
+  margin-left: 20px;
+}
+
+.deptdetails div h3{
+  margin: 10px auto;
+}
+
+.deptsite{
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.deptsite a{
+  margin: 10px;
+  font-size: 16px;
+  padding: 13px;
+  background-color: #002147;
+  width: max-content;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+}
+
+
+.courses{
+  max-width: 1450px;
+  margin: auto;
+}
+
+.courses h2{
+  font: normal 700 30px 'Nunito-sans', sans-serif;
+  margin: 25px 0;
+}
+
+.courses p{
+  font: normal 500 19px  sans-serif;
+  text-align: justify;
+  margin:5px auto;
+
+}
+
+.venue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue p{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue img{
+  width: 50px;
+  height: 50px;
+}
+
+.facilities{
+  max-width: 1450px;
+  margin: auto;
+}
+
+.facilities h2{
+  font: normal 700 30px 'Nunito-sans', sans-serif;
+  margin: 25px 0;
+}
+
+.facilities p{
+  font: normal 500 19px  sans-serif;
+  text-align: justify;
+  margin:5px auto;
+}
+
+.register{
+  max-width: 1450px;
+  margin: 70px auto;
+}
+
+.register h2{
+  font: normal 700 30px 'Nunito-sans', sans-serif;
+  margin: 25px 0;
+}
+
+.register .poster{
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.register img{
+  border: 7px double black;
+  width: 800px;
+}
+
+.regbutton{
+  margin: 16px auto;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #002147;
+  color: white;
+  border-radius: 30px;
+  width: max-content;
+}
+
+.regbutton:hover{
+  background-color: #fb8500;
+}
+
+
+.footer{
+  background-color: #002147;
+  margin: 70px auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.subfooter{
+  max-width: 1450px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.location, .address, .otherdetails{
+  margin: 50px 0;
+}
+
+.location iframe{
+  border-radius: 10px;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.address p{
+  width: 32vw;
+  text-align: justify;
+}
+
+.address img{
+  width: 40vw;
+}
+
+.otherdetails{
+  display: flex;  
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+}
+
+.otherdetails div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.otherdetails img{
+  width: 50px;
+  height: 50px;
+}
+
+.copyrights{
+  text-align: center;
+  padding: 20px;
+  background-color: #001a39;
+  color: white;
+}
+
+@media (max-width: 1350px ) and (min-width: 1250px) {
+  .address{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1070px){
+  .transbox{
+    gap: 10px;
+  }
+
+  .clgname{
+    font-size: 50px;
+  }
+
+  .deptname{
+    font-size: 30px;
+  }
+
+  .event{
+    font-size: 70px;
+  }
+
+  .address{
+    font-size: 18px;
+  }
+
+  .subfooter{
+    gap: 10px;
+  }
+
+  .otherdetails div{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1070px){
+  .transbox{
+    gap: 10px;
+  }
+
+  .clgname{
+    font-size: 50px;
+  }
+
+  .deptname{
+    font-size: 30px;
+  }
+
+  .event{
+    font-size: 70px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 60vw;
+  }
+
+  .address p{
+    width: 50vw;
+  }
+
+  /* .otherdetails div{
+    font-size: 14px;
+  } */
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+
+  }
+  
+}
+
+@media (max-width: 850px) and (min-width: 800px){
+  .transbox{
+    gap: 10px;
+  }
+
+  .clgname{
+    font-size: 50px;
+  }
+
+  .deptname{
+    font-size: 30px;
+  }
+
+  .event{
+    font-size: 70px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 60vw;
+  }
+
+  .address p{
+    width: 50vw;
+  }
+
+  /* .otherdetails div{
+    font-size: 14px;
+  } */
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 600px;
+  }
+
+  
+}
+
+@media (max-width: 800px) and (min-width: 650px){
+  .transbox{
+    gap: 10px;
+  }
+
+  .clgname{
+    font-size: 40px;
+  }
+
+  .deptname{
+    font-size: 28px;
+  }
+
+  .event{
+    font-size: 50px;
+  }
+
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 80vw;
+  }
+
+  .address p{
+    width: 70vw;
+  }
+
+  /* .otherdetails div{
+    font-size: 14px;
+  } */
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 600px;
+  }
+
+}
+
+@media (max-width: 650px) and (min-width: 480px){
+  .transbox{
+    gap: 5px;
+  }
+
+  .clgname{
+    font-size: 40px;
+  }
+
+  .deptname{
+    font-size: 28px;
+  }
+
+  .event{
+    font-size: 50px;
+  }
+
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 80vw;
+  }
+
+  .address p{
+    width: 70vw;
+  }
+
+  /* .otherdetails div{
+    font-size: 14px;
+  } */
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 450px;
+  }
+  .enroll{
+    font-size: 20px;
+  }
+
+  .menu li{
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 410px){
+  .transbox{
+    gap: 5px;
+  }
+
+  .clgname{
+    font-size: 35px;
+  }
+
+  .deptname{
+    font-size: 28px;
+  }
+
+  .event{
+    font-size: 40px;
+  }
+
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 80vw;
+  }
+
+  .address p{
+    width: 70vw;
+  }
+
+  /* .otherdetails div{
+    font-size: 14px;
+  } */
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 350px;
+  }
+  .enroll{
+    font-size: 20px;
+  }
+
+  .menu li{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 410px) and (min-width: 350px){
+  .transbox{
+    gap: 5px;
+  }
+
+  .clgname{
+    font-size: 25px;
+  }
+
+  .deptname{
+    font-size: 20px;
+  }
+
+  .event{
+    font-size: 35px;
+  }
+
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 80vw;
+  }
+
+  .address p{
+    width: 70vw;
+  }
+
+  .otherdetails div{
+    font-size: 14px;
+  }
+
+  .otherdetails img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 350px;
+  }
+  .enroll{
+    font-size: 20px;
+  }
+
+  .menu li{
+    margin: 0 8px;
+    font-size: 12px;
+  }
+
+  .deptsite a{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px){
+  .transbox{
+    gap: 5px;
+  }
+
+  .clgname{
+    font-size: 25px;
+  }
+
+  .deptname{
+    font-size: 20px;
+  }
+
+  .event{
+    font-size: 35px;
+  }
+
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address{
+    font-size: 20px;
+  }
+
+  .subfooter{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .address, .otherdetails{
+    margin: 30px 0;
+  }
+
+  .address img{
+    width: 80vw;
+  }
+
+  .address p{
+    width: 70vw;
+  }
+
+  .otherdetails div{
+    font-size: 14px;
+  }
+
+  .otherdetails img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .campustour iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .venue{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .register img{
+    border: 7px double black;
+    width: 350px;
+  }
+  .enroll{
+    font-size: 20px;
+  }
+
+  .menu li{
+    margin: 0 8px;
+    font-size: 12px;
+  }
+
+  .deptsite a{
+    font-size: 12px;
+  }
+}
+
+
